@@ -1,0 +1,18 @@
+.admin-home {
+  min-height: 80vh;
+}
+
+.admin-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  background-color: #b6e7bd;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(0, 128, 0, 0.2);
+}
+
+button {
+  border-radius: 25px;
+}

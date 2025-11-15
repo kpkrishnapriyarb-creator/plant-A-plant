@@ -1,0 +1,70 @@
+
+.hero-section {
+  background-color: #e8f5e9; /* soft light green */
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+/* ✅ Hero image styling */
+.hero-img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Headline & text */
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1b4332;
+}
+
+.hero-section p {
+  color: #2d6a4f;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+/* ✅ Gallery section spacing */
+.hero-section .mt-5 {
+  margin-top: 4rem !important;
+}
+
+/* ✅ Cards look elegant */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Button tweaks */
+.btn-success {
+  background-color: #2d6a4f !important;
+  border: none !important;
+}
+
+.btn-success:hover {
+  background-color: #1b4332 !important;
+}
+
+.btn-outline-success {
+  border-color: #2d6a4f !important;
+  color: #2d6a4f !important;
+}
+
+.btn-outline-success:hover {
+  background-color: #2d6a4f !important;
+  color: #fff !important;
+}
+.hero-img {
+  width: 70%;
+  max-width: 400px;
+  height: 60%;
+  margin-left: 50%;
+  
+}

@@ -1,0 +1,77 @@
+
+.carousel-image {
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 14px;
+  filter: brightness(75%) saturate(110%);
+  transition: transform 1.5s ease-in-out;
+}
+
+.carousel-image:hover {
+  transform: scale(1.03);
+}
+
+
+.carousel-caption-custom {
+  position: absolute;
+  top: 50%; /* Vertical center */
+  left: 50%; /* Horizontal center */
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px 40px;
+  border-radius: 18px;
+  color: #fff;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  animation: fadeInUp 1s ease-in-out;
+  text-align: center; /* Ensure text aligns centrally */
+}
+
+/*  Heading */
+.carousel-caption-custom h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #9bffb0; /* beautiful soft green */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+/* 💫 Paragraph */
+.carousel-caption-custom p {
+  font-size: 1.2rem;
+  color: #e0ffe3;
+  margin: 0;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 30px));
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* 📱 Responsive design for mobile */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 70vh;
+  }
+
+  .carousel-caption-custom h1 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-caption-custom p {
+    font-size: 1rem;
+  }
+
+  .carousel-caption-custom {
+    padding: 15px 25px;
+  }
+}

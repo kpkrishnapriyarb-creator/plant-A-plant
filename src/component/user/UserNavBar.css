@@ -1,0 +1,69 @@
+
+
+/* 🌿 Overall Navbar Style */
+.plant-navbar {
+  background-color: #c3f5c7; /* soft light green */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌿 Brand Text */
+.navbar-brand-text {
+  color: green !important;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌿 Nav Links */
+.nav-link-custom {
+  color: #2e7d32 !important; /* dark green */
+  font-weight: 500;
+  margin-right: 15px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-link-custom:hover {
+  color: #1b5e20 !important;
+  border-bottom: 2px solid #1b5e20;
+}
+
+/* 🌿 Dropdown */
+.nav-dropdown-custom .dropdown-menu {
+  background-color: #f1f8e9;
+}
+
+.nav-dropdown-custom .dropdown-item:hover {
+  background-color: #c8e6c9;
+  color: #1b5e20;
+}
+
+.navbar-toggler {
+  border-color: #66bb6a !important;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  position: relative;
+}
+
+
+.navbar-toggler-icon::before {
+  content: "☘️";
+  font-size: 1.3rem;
+  color: green;
+}
+
+.leaf-icon {
+  color: #2e7d32;
+  font-size: 1.8rem;
+  margin-right: 5px;
+  animation: spinLeaf 4s ease-in-out infinite alternate;
+}
+.position-relative-heart{
+  color: red;
+}
+.position-relative-shop{
+  color: #66bb6a;
+}

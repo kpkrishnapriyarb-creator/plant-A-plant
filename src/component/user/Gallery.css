@@ -1,0 +1,28 @@
+
+ .plant-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.plant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .gallery-img {
+    height: 200px;
+  }
+}
+.Heading{
+  color: rgb(10, 106, 10);
+}
