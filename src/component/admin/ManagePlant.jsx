@@ -7,7 +7,7 @@ export default function ManagePlant() {
   const [plants, setPlants] = useState([]);
 
   const fetchPlants = async () => {
-    const res = await axios.get("/plants");
+    const res = await axios.get("http://localhost:5000/plants");
     setPlants(res.data);
   };
 

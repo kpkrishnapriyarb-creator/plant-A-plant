@@ -10,7 +10,7 @@ function Gallery() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/plants")
+    fetch("http://localhost:5000/plants")
       .then((response) => response.json())
       .then((data) => {
         setPlants(data);

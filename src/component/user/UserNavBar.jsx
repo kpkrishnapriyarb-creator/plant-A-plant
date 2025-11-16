@@ -1,12 +1,8 @@
-
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import './UserNavBar.css';
-import { FaShoppingCart } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa6";
-
-
+import { FaShoppingCart, FaHeart } from "react-icons/fa"; // ✅ use fa, not fa6
 
 function UserNavBar({ cartCount, theme, toggleTheme }) {
   return (
@@ -32,7 +28,7 @@ function UserNavBar({ cartCount, theme, toggleTheme }) {
               Contact
             </Nav.Link>
 
-            <NavDropdown title="More" id="basic-nav-dropdown" >
+            <NavDropdown title="More" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/gallery">
                 Gallery
               </NavDropdown.Item>
@@ -41,18 +37,15 @@ function UserNavBar({ cartCount, theme, toggleTheme }) {
               </NavDropdown.Item>
             </NavDropdown>
             
-          <Nav.Link as={Link} to="/cart" className="position-relative-shop">
+            <Nav.Link as={Link} to="/cart" className="position-relative-shop">
               <FaShoppingCart size={20} />
-          </Nav.Link>
+            </Nav.Link>
 
-
-
-
-
-             <Nav.Link as={Link} to="/wishlist" className="position-relative-heart">
+            <Nav.Link as={Link} to="/wishlist" className="position-relative-heart">
               <FaHeart size={20} />
-              </Nav.Link>
-           </Nav>
+            </Nav.Link>
+
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -60,7 +53,3 @@ function UserNavBar({ cartCount, theme, toggleTheme }) {
 }
 
 export default UserNavBar;
-
-
-
-

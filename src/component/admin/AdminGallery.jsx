@@ -16,7 +16,7 @@ function AdminGallery() {
   //  Fetch plants from db.json using json-server
   useEffect(() => {
     axios
-      .get("/plants")
+      .get("http://localhost:5000/plants")
       .then((res) => {
         setPlants(res.data);
       })
@@ -78,10 +78,6 @@ function AdminGallery() {
     e.target.src = import.meta.env.BASE_URL + "images/default.jpg";
   }}
 />
-
-
-
-
 
 
               <Card.Body>
