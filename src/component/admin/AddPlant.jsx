@@ -116,6 +116,14 @@ export default function AddPlant() {
               Add Plant
             </Button>
           </div>
+
+          <div className="text-center">
+            <Button type="submit" variant="success">
+              Delete
+            </Button>
+          </div>
+
+
         </Form>
       </Card>
     </Container>

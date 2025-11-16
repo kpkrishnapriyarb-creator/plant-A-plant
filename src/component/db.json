@@ -1,0 +1,362 @@
+{
+  "plants": [
+    {
+      "id": "1",
+      "name": "Peace Lily",
+      "price": 250,
+      "category": "Indoor",
+      "rating": 4.2,
+      "image": "https://images.pexels.com/photos/1471600/pexels-photo-1471600.jpeg",
+      "description": "A beautiful indoor plant with white blooms that purifies air."
+    },
+    {
+      "id": "2",
+      "name": "Snake Plant",
+      "price": 180,
+      "category": "Indoor",
+      "rating": 4.3,
+      "image": "https://homeplantsguide.com/img/dracaena-masoniana-variegata.webp",
+      "description": "Low-maintenance plant perfect for beginners."
+    },
+    {
+      "id": "3",
+      "name": "Areca Palm",
+      "price": 350,
+      "category": "Outdoor",
+      "rating": 4.1,
+      "image": "https://m.media-amazon.com/images/I/61NUj7J6VrL._SY300_SX300_QL70_FMwebp_.jpg",
+      "description": "Popular air-purifying plant with long feathery leaves."
+    },
+    {
+      "id": "4",
+      "name": "zz plant",
+      "price": 300,
+      "category": "Outdoor",
+      "rating": 4.2,
+      "image": "https://globalgardeningsecrets.com/wp-content/uploads/2022/08/1661442330_514_11-beautiful-varieties-of-ZZ-plants-with-photos.webp.webp",
+      "description": "Popular air-purifying plant with long feathery leaves."
+    },
+    {
+      "id": "5",
+      "name": "Aloe Vera",
+      "category": "Medicinal",
+      "price": 200,
+      "rating": 4.8,
+      "image": "https://plus.unsplash.com/premium_photo-1673818150416-7b96596cfdf9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFsb2UlMjB2ZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+      "description": "Succulent plant known for its healing and skin-soothing properties."
+    },
+    {
+      "id": "6",
+      "name": "Money Plant",
+      "category": "Indoor",
+      "price": 220,
+      "rating": 4.8,
+      "image": "https://houseplantalley.com/wp-content/uploads/2023/12/Pilea-Peperomioides-1024x1024.jpg",
+      "description": "Symbol of prosperity, easy to grow both in soil and water."
+    },
+    {
+      "id": "7",
+      "name": "Spider Plant",
+      "category": "Indoor",
+      "price": 280,
+      "rating": 4,
+      "image": "https://images.pexels.com/photos/4505177/pexels-photo-4505177.jpeg",
+      "description": "Attractive striped leaves and excellent air purifier."
+    },
+    {
+      "id": "8",
+      "name": "Rubber Plant",
+      "category": "Indoor",
+      "price": 350,
+      "rating": 3.9,
+      "image": "https://www.thespruce.com/thmb/mjZNaVSqShjcpPrp8bxtoXEL6W8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1291612778-fac43b63ed1a465eac4c4b4bc3e879de.jpg",
+      "description": "Glossy leaves and easy-care indoor plant with modern appeal."
+    },
+    {
+      "id": "9",
+      "name": "Jade Plant",
+      "category": "Succulent",
+      "price": 270,
+      "rating": 4,
+      "image": "https://ownyardlife.com/wp-content/uploads/2025/03/Crassula-ovata-%E2%80%98Hobbit.jpg",
+      "description": "Brings good luck and positivity; loves bright sunlight."
+    },
+    {
+      "id": "10",
+      "name": "Bamboo Palm",
+      "category": "Indoor",
+      "price": 420,
+      "rating": 4.7,
+      "image": "https://cdn.pixabay.com/photo/2013/03/14/04/25/beach-hut-93414_1280.jpg",
+      "description": "Graceful palm perfect for homes and offices, filters toxins."
+    },
+    {
+      "id": "11",
+      "name": "ZZ Plant",
+      "category": "Indoor",
+      "price": 390,
+      "rating": 4,
+      "image": "https://images.pexels.com/photos/4505175/pexels-photo-4505175.jpeg",
+      "description": "Tolerates low light and neglect; glossy dark green foliage."
+    },
+    {
+      "id": "12",
+      "name": "Rose Plant",
+      "category": "Flowering",
+      "price": 250,
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600",
+      "description": "Classic flowering plant that adds fragrance and color to gardens."
+    },
+    {
+      "id": "13",
+      "name": "Tulsi (Holy Basil)",
+      "category": "Medicinal",
+      "price": 150,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1589706261424-03debaed31ea?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHVsc2klMjBwbGFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600",
+      "description": "Sacred plant with antibacterial and medicinal benefits."
+    },
+    {
+      "id": "14",
+      "name": "Lavender",
+      "category": "Outdoor",
+      "price": 320,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGF2ZW5kZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
+      "description": "Fragrant herb known for relaxation and natural beauty."
+    },
+    {
+      "id": "15",
+      "name": "Jasmine",
+      "category": "Flowering",
+      "price": 280,
+      "rating": 3.8,
+      "image": "https://cdn.pixabay.com/photo/2019/07/09/06/12/jasmine-4326292_1280.jpg",
+      "description": "Sweet-scented white flowers; perfect for balconies and gardens."
+    },
+    {
+      "id": "16",
+      "name": "Bonsai Ficus",
+      "category": "Decorative",
+      "price": 600,
+      "rating": 3.9,
+      "image": "https://images.pexels.com/photos/4505172/pexels-photo-4505172.jpeg",
+      "description": "Miniature tree symbolizing harmony, balance, and patience."
+    },
+    {
+      "id": "17",
+      "name": "Croton",
+      "category": "Indoor",
+      "price": 330,
+      "rating": 4.4,
+      "image": "https://images.pexels.com/photos/4505173/pexels-photo-4505173.jpeg",
+      "description": "Colorful foliage adds a tropical touch to indoor spaces."
+    },
+    {
+      "id": "18",
+      "name": "Lucky Bamboo",
+      "category": "Indoor",
+      "price": 290,
+      "rating": 3.5,
+      "image": "https://as1.ftcdn.net/jpg/16/80/28/38/1000_F_1680283869_XMHAks1dmpIWWVyis7K1wo0C0X60LzAY.jpg",
+      "description": "Symbol of good fortune and prosperity; thrives in water."
+    },
+    {
+      "id": "19",
+      "name": "Pothos (Golden Money Plant)",
+      "category": "Indoor",
+      "price": 260,
+      "rating": 3.7,
+      "image": "https://images.pexels.com/photos/3076898/pexels-photo-3076898.jpeg",
+      "description": "Hardy vine with golden-green leaves; excellent air purifier."
+    },
+    {
+      "id": "20",
+      "name": "Fern Plant",
+      "category": "Indoor",
+      "price": 310,
+      "rating": 4.5,
+      "image": "https://plantglossary.com/wp-content/uploads/2023/03/Types-of-ferns.jpg",
+      "description": "Lush green fronds perfect for hanging baskets or corners."
+    },
+    {
+      "id": "21",
+      "name": "Cactus",
+      "category": "Succulent",
+      "price": 180,
+      "rating": 4.2,
+      "image": "https://images.pexels.com/photos/4751977/pexels-photo-4751977.jpeg",
+      "description": "Low-water plant ideal for minimalists and sunny spots."
+    },
+    {
+      "id": "22",
+      "name": "Anthurium",
+      "price": "600",
+      "description": " Anthurium is named after its bright blooms that look as colorful as flamingo dancers..",
+      "category": "Flowering",
+      "rating": 3.8,
+      "image": "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/2912cbd46f_480x480.jpg?v=1725000454"
+    },
+    {
+      "id": "23",
+      "name": "Philodendron",
+      "price": "300",
+      "description": "Fresh and clean plant",
+      "category": "indoor",
+      "image": "https://tse4.mm.bing.net/th/id/OIP.gT_fEZy-TiImFuulo13-JAHaE8?pid=Api&P=0&h=180",
+      "rating": 4
+    }
+  ],
+  "orders": [
+    {
+      "id": "2eb2",
+      "user": "krishnapriya",
+      "address": "Trivandrum,Kerala",
+      "phone": "8085673086",
+      "products": [
+        {
+          "id": "14",
+          "name": "Lavender",
+          "price": 320,
+          "image": "https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGF2ZW5kZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600"
+        },
+        {
+          "id": "6",
+          "name": "Money Plant",
+          "price": 220,
+          "image": "https://houseplantalley.com/wp-content/uploads/2023/12/Pilea-Peperomioides-1024x1024.jpg"
+        }
+      ],
+      "total": 540,
+      "status": "delivered",
+      "date": "2025-11-08T06:32:51.904Z"
+    },
+    {
+      "id": "aaec",
+      "user": "Roopa",
+      "address": "Roopa's House,Kochi,Kerala",
+      "phone": "9087452545",
+      "products": [
+        {
+          "id": "4",
+          "name": "zz plant",
+          "price": 300,
+          "image": "https://globalgardeningsecrets.com/wp-content/uploads/2022/08/1661442330_514_11-beautiful-varieties-of-ZZ-plants-with-photos.webp.webp"
+        },
+        {
+          "id": "1",
+          "name": "Peace Lily",
+          "price": 250,
+          "image": "https://images.pexels.com/photos/1471600/pexels-photo-1471600.jpeg"
+        }
+      ],
+      "total": 550,
+      "status": "pending",
+      "date": "2025-11-08T06:38:30.412Z"
+    },
+    {
+      "id": "6385",
+      "user": "Sanjay",
+      "address": "Eranakulam,Kerala",
+      "phone": "9806753245",
+      "products": [
+        {
+          "id": "5",
+          "name": "Aloe Vera",
+          "price": 200,
+          "image": "https://plus.unsplash.com/premium_photo-1673818150416-7b96596cfdf9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFsb2UlMjB2ZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600"
+        }
+      ],
+      "total": 200,
+      "status": "pending",
+      "date": "2025-11-08T06:41:26.801Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "f37e",
+      "name": "Krishnapriya",
+      "email": "krishnapriya@gmail.com",
+      "message": "Good customer service and good product"
+    },
+    {
+      "id": "ca0a",
+      "name": "Roopa",
+      "email": "roopa@gmail.com",
+      "message": "Good product"
+    }
+  ],
+  "users": [
+    {
+      "id": "8c06",
+      "username": "krishna",
+      "password": "111"
+    },
+    {
+      "id": "fe98",
+      "username": "krishnapriya",
+      "password": "kri"
+    },
+    {
+      "id": "6865",
+      "username": "Ammu",
+      "password": "ammu"
+    },
+    {
+      "id": "b176",
+      "username": "Roopa",
+      "password": "roopa"
+    },
+    {
+      "id": "5099",
+      "username": "Sanjay",
+      "password": "sanjay"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "Ammu",
+      "password": "ammu123",
+      "role": "admin"
+    }
+  ],
+  "wishlist": [
+    {
+      "id": "3",
+      "name": "Areca Palm",
+      "price": 350,
+      "category": "Outdoor",
+      "rating": 4.1,
+      "image": "https://m.media-amazon.com/images/I/61NUj7J6VrL._SY300_SX300_QL70_FMwebp_.jpg",
+      "description": "Popular air-purifying plant with long feathery leaves."
+    }
+  ],
+  "cart": [
+    {
+      "id": "3",
+      "name": "Areca Palm",
+      "price": 350,
+      "category": "Outdoor",
+      "rating": 4.1,
+      "image": "https://m.media-amazon.com/images/I/61NUj7J6VrL._SY300_SX300_QL70_FMwebp_.jpg",
+      "description": "Popular air-purifying plant with long feathery leaves."
+    },
+    {
+      "id": "5",
+      "name": "Aloe Vera",
+      "category": "Medicinal",
+      "price": 200,
+      "rating": 4.8,
+      "image": "https://plus.unsplash.com/premium_photo-1673818150416-7b96596cfdf9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFsb2UlMjB2ZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+      "description": "Succulent plant known for its healing and skin-soothing properties."
+    }
+  ]
+}
