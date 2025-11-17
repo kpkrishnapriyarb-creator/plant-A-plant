@@ -30,6 +30,8 @@ import ViewOrder from "./component/admin/ViewOrder";
 import AdminGallery from "./component/admin/AdminGallery";
 import AdminNavbar from "./component/admin/AdminNavBar";
 import AdminMessage from "./component/admin/AdminMessage";
+import AboutUs from "./component/user/AboutUs";
+import CareTips from "./component/user/CareTips";
 
 function Layout() {
   const location = useLocation();
@@ -60,6 +62,9 @@ function Layout() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/caretips" element={<CareTips />} />
+
 
         {/* Admin Routes */}
         <Route path="/admin/login" element={<AdminLogin />} />

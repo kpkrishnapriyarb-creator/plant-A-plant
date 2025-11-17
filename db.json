@@ -358,5 +358,104 @@
       "image": "https://plus.unsplash.com/premium_photo-1673818150416-7b96596cfdf9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFsb2UlMjB2ZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
       "description": "Succulent plant known for its healing and skin-soothing properties."
     }
-  ]
+  ],
+
+  
+"careTips": [
+  {
+    "id": 1,
+    "name": "Pothos",
+    "imgUrl": "https://images.pexels.com/photos/3076898/pexels-photo-3076898.jpeg",
+    "tips": "Bright indirect light; water when topsoil becomes dry."
+  },
+  {
+    "id": 2,
+    "name": "Snake Plant",
+    "imgUrl": "https://homeplantsguide.com/img/dracaena-masoniana-variegata.webp",
+    "tips": "Tolerates low light; water sparingly, avoid overwatering."
+  },
+  {
+    "id": 3,
+    "name": "ZZ Plant",
+    "imgUrl": "https://images.pexels.com/photos/4505175/pexels-photo-4505175.jpeg",
+    "tips": "Can survive in low light; water only when completely dry."
+  },
+  {
+    "id": 4,
+    "name": "Peace Lily",
+    "imgUrl": "https://images.pexels.com/photos/1471600/pexels-photo-1471600.jpeg",
+    "tips": "Prefers medium light; keep soil slightly moist at all times."
+  },
+  {
+    "id": 5,
+    "name": "Areca Palm",
+    "imgUrl": "https://m.media-amazon.com/images/I/61NUj7J6VrL._SY300_.jpg",
+    "tips": "Bright indirect light; water regularly but avoid soggy soil."
+  },
+  {
+    "id": 6,
+    "name": "Aloe Vera",
+    "imgUrl": "https://plus.unsplash.com/premium_photo-1673818150416-7b96596cfdf9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFsb2UlMjB2ZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+    "tips": "Needs bright sunlight; water once every 2–3 weeks."
+  },
+  {
+    "id": 7,
+    "name": "Money Plant",
+    "imgUrl": "https://houseplantalley.com/wp-content/uploads/2023/12/Pilea-Peperomioides-1024x1024.jpg",
+    "tips": "Grows well in water or soil; indirect light is ideal."
+  },
+  {
+    "id": 8,
+    "name": "Rubber Plant",
+    "imgUrl": "https://www.thespruce.com/thmb/mjZNaVSqShjcpPrp8bxtoXEL6W8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1291612778-fac43b63ed1a465eac4c4b4bc3e879de.jpg",
+    "tips": "Bright filtered light; keep soil moist but not wet."
+  },
+  {
+    "id": 9,
+    "name": "Spider Plant",
+    "imgUrl": "https://images.pexels.com/photos/4505177/pexels-photo-4505177.jpeg",
+    "tips": "Thrives in indirect sunlight; water moderately."
+  },
+  {
+    "id": 10,
+    "name": "Jade Plant",
+    "imgUrl": "https://images.pexels.com/photos/212942/pexels-photo-212942.jpeg",
+    "tips": "Needs bright light; water only when soil is fully dry."
+  },
+  {
+    "id": 11,
+    "name": "Fern Plant",
+    "imgUrl": "https://plantglossary.com/wp-content/uploads/2023/03/Types-of-ferns.jpg",
+    "tips": "High humidity; keep soil moist and avoid direct sunlight."
+  },
+  {
+    "id": 12,
+    "name": "Lavender",
+    "imgUrl": "https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGF2ZW5kZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
+    "tips": "Full sunlight; water only when soil gets dry."
+  },
+  {
+    "id": 13,
+    "name": "Rose Plant",
+    "imgUrl": "https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600",
+      "description": "Classic flowering plant that adds fragrance and color to gardens.",
+    "tips": "Needs strong sunlight; prune regularly and water deeply."
+  },
+  {
+    "id": 14,
+    "name": "Philodendron",
+    "imgUrl": "https://images.pexels.com/photos/4505174/pexels-photo-4505174.jpeg",
+    "tips": "Prefers medium light; keep soil lightly moist."
+  },
+  {
+    "id": 15,
+    "name": "Lucky Bamboo",
+    "imgUrl": "https://images.pexels.com/photos/4505169/pexels-photo-4505169.jpeg",
+    "tips": "Grows best in water; keep roots submerged and change water weekly."
+  }
+]
+
+
+
 }
+

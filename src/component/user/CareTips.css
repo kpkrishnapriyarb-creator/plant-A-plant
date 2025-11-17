@@ -1,166 +1,280 @@
-/* --- Global & Container Styles --- */
-.plant-care-search-page {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #ffffff;
-    min-height: 100vh;
+------------------- GLOBAL -------------------
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f9f5;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* ------------------- SEARCH SECTION ------------------- */
+
+.search-section {
+  background: linear-gradient(135deg, #4a755d, #6fa67f);
+  padding: 50px 0;
+  text-align: center;
+  color: white;
 }
 
-h1, h2, h3 {
-    font-weight: 600;
-    color: #1a472a; /* Dark Forest Green */
-}
-
-/* --- Hero & Search Section (The Nav Area) --- */
-.search-hero {
-    background-color: #e6f1e8; /* Light mint green */
-    text-align: center;
-    padding: 60px 20px 40px;
-    margin-bottom: 40px;
+.search-section h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .search-input {
-    width: 100%;
-    max-width: 600px;
-    padding: 12px 20px;
-    margin-top: 20px;
-    border: 2px solid #4a755d; /* Medium Green border */
-    border-radius: 50px;
-    font-size: 1em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: border-color 0.3s;
+  width: 60%;
+  max-width: 420px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
 }
 
 .search-input:focus {
-    outline: none;
-    border-color: #1a472a; /* Darker green on focus */
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
 }
 
-/* --- Plant Grid --- */
-.plant-grid-section {
-    padding-bottom: 60px;
-}
+/* ------------------- PLANT GRID ------------------- */
 
 .plant-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
 }
 
 .plant-card {
-    /* The Div Box style */
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
 }
 
 .plant-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-.plant-image-container {
-    height: 200px; /* Fixed height for consistent cards */
-    overflow: hidden;
+.plant-img {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-.plant-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.plant-card h3 {
+  margin: 14px 0 10px;
+  font-size: 18px;
+  color: #2d4a38;
 }
 
-.plant-name {
-    color: #4a755d;
-    font-size: 1.3em;
-    margin: 15px 10px 10px;
+.view-btn {
+  background-color: #4a755d;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.care-tip-button {
-    background-color: #6aa84f; /* Accent Green */
-    color: #ffffff;
-    border: none;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-weight: 500;
+.view-btn:hover {
+  background-color: #3c5e4b;
 }
 
-.care-tip-button:hover {
-    background-color: #4a755d;
+/* ------------------- LOADING & EMPTY STATE ------------------- */
+
+.loading,
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #4a755d;
+  margin-top: 30px;
 }
 
-/* --- Modal Styling --- */
+/* ------------------- MODAL ------------------- */
+
 .modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 46, 36, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
 }
 
 .modal-content {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 500px;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: white;
+  width: 90%;
+  max-width: 420px;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 .modal-close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    color: #333;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  border: none;
+  background: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-image {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 .modal-tips {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f0fff4; /* Lightest green for the tips box */
-    border-left: 4px solid #6aa84f;
-    border-radius: 4px;
+  margin-top: 14px;
+  font-size: 16px;
+  color: #2d4a38;
+  line-height: 1.5;
 }
 
-/* --- Utility/Status Messages --- */
-.loading-message, .no-results, .error-message {
-    text-align: center;
-    grid-column: 1 / -1; 
-    padding: 40px;
-    font-size: 1.2em;
-    color: #4a755d;
-}
-.error-message {
-    color: #d9534f; /* Red for error messages */
-    font-weight: 600;
-}
+/* ------------------- RESPONSIVE ------------------- */
 
-/* --- Mobile Responsiveness --- */
 @media (max-width: 600px) {
-    .plant-grid {
-        grid-template-columns: 1fr;
+  .search-input {
+    width: 80%;
+  }
+
+  .plant-grid {
+    gap: 18px;
+  }
 }
+
+/* ===========================
+   PLANT GRID CONTAINER
+=========================== */
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  justify-items: center; /* Center cards */
+}
+
+/* When only ONE plant is shown (search result) */
+.plant-grid.single {
+  justify-content: center;
+}
+
+/* ===========================
+   PLANT CARD
+=========================== */
+.plant-card {
+  width: 100%;
+  max-width: 280px;       /* Card never becomes too wide */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.plant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+.plant-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;       /* Keeps image clean & non-stretched */
+}
+
+/* ===========================
+   DETAILS TEXT
+=========================== */
+.card-details {
+  padding: 15px;
+}
+
+.card-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.card-details p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.card-price {
+  font-weight: bold;
+  color: #2e7d32;
+  margin-top: 8px;
+}
+
+/* ===========================
+   CATEGORY BADGE
+=========================== */
+.category-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+/* ===========================
+   RATING
+=========================== */
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.rating span {
+  color: #ffa500;
+  margin-right: 6px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  .plant-card {
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 500px) {
+  .plant-card {
+    max-width: 100%;
+  }
 }

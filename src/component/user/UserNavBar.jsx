@@ -32,7 +32,7 @@ function UserNavBar({ cartCount, theme, toggleTheme }) {
               <NavDropdown.Item as={Link} to="/gallery">
                 Gallery
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/care-tips">
+              <NavDropdown.Item as={Link} to="/caretips">
                 Care Tips
               </NavDropdown.Item>
             </NavDropdown>
