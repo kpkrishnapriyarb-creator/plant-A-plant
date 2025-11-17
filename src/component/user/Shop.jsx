@@ -1,70 +1,80 @@
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 function Shop() {
   const [plants, setPlants] = useState([]);
   const [wishlist, setWishlist] = useState([]);
+  const [cart, setCart] = useState([]);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [priceRange, setPriceRange] = useState([0, 1000]);
   const [rating, setRating] = useState("All");
 
   const navigate = useNavigate();
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
-  // Fetch plants & wishlist from backend
   useEffect(() => {
     const fetchData = async () => {
       try {
+        // Fetch all plants
         const plantsRes = await axios.get("http://localhost:5000/plants");
         setPlants(plantsRes.data);
 
-        const wishlistRes = await axios.get("http://localhost:5000/wishlist");
-        setWishlist(wishlistRes.data);
+        // Fetch user's wishlist & cart if logged in
+        if (loggedInUser) {
+          const userRes = await axios.get(`http://localhost:5000/users/${loggedInUser.id}`);
+          setWishlist(userRes.data.wishlist || []);
+          setCart(userRes.data.cart || []);
+        }
       } catch (err) {
         console.error("Error fetching data:", err);
       }
     };
-
     fetchData();
-  }, []);
+  }, [loggedInUser]);
 
-  // Add plant to cart (backend)
+  // Add to cart
   const handleAddToCart = async (plant) => {
-    try {
-      // POST to cart endpoint
-      await axios.post("http://localhost:5000/cart", plant);
-      alert(`${plant.name} added to cart!`);
-    } catch (err) {
-      console.error("Error adding to cart:", err);
-    }
+    if (!loggedInUser) return alert("Please login first!");
+    if (cart.some((item) => item.id === plant.id)) return alert("Already in cart!");
+
+    const updatedCart = [...cart, plant];
+    setCart(updatedCart);
+
+    await axios.patch(`http://localhost:5000/users/${loggedInUser.id}`, {
+      cart: updatedCart,
+    });
+
+    const updatedUser = { ...loggedInUser, cart: updatedCart };
+    localStorage.setItem("loggedInUser", JSON.stringify(updatedUser));
+
+    alert(`${plant.name} added to cart!`);
   };
 
-  // Toggle wishlist (backend)
+  // Toggle wishlist
   const toggleWishlist = async (plant) => {
-    try {
-      const exists = wishlist.find((item) => item.id === plant.id);
-      let updatedWishlist;
+    if (!loggedInUser) return alert("Please login first!");
 
-      if (exists) {
-        await axios.delete(`http://localhost:5000/wishlist/${plant.id}`);
-        updatedWishlist = wishlist.filter((item) => item.id !== plant.id);
-      } else {
-        await axios.post("http://localhost:5000/wishlist", plant);
-        updatedWishlist = [...wishlist, plant];
-        alert(`${plant.name} added to wishlist! ❤️`);
-      }
-
-      setWishlist(updatedWishlist);
-    } catch (err) {
-      console.error("Error updating wishlist:", err);
+    let updatedWishlist;
+    if (wishlist.some((item) => item.id === plant.id)) {
+      updatedWishlist = wishlist.filter((item) => item.id !== plant.id);
+    } else {
+      updatedWishlist = [...wishlist, plant];
     }
+
+    setWishlist(updatedWishlist);
+
+    const updatedUser = { ...loggedInUser, wishlist: updatedWishlist };
+    await axios.patch(`http://localhost:5000/users/${loggedInUser.id}`, {
+      wishlist: updatedWishlist,
+    });
+
+    localStorage.setItem("loggedInUser", JSON.stringify(updatedUser));
   };
 
-  // Filtered plants logic
+  // Filter plants based on search, category, price, rating
   const filteredPlants = plants.filter((p) => {
     const matchesSearch =
       p.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -79,7 +89,7 @@ function Shop() {
     <div className="container py-4">
       <h2 className="text-center mb-4 fw-bold text-success">🌿 Our Plants</h2>
 
-      {/* Search & Filters */}
+      {/* Filters + Wishlist / Cart Buttons */}
       <div className="row mb-4">
         <div className="col-md-3 mb-2">
           <input
@@ -90,7 +100,6 @@ function Shop() {
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
-
         <div className="col-md-2 mb-2">
           <select
             className="form-select"
@@ -104,14 +113,10 @@ function Shop() {
             <option value="Succulent">Succulent</option>
           </select>
         </div>
-
         <div className="col-md-2 mb-2">
           <select
             className="form-select"
-            onChange={(e) => {
-              const value = e.target.value.split("-").map(Number);
-              setPriceRange(value);
-            }}
+            onChange={(e) => setPriceRange(e.target.value.split("-").map(Number))}
           >
             <option value="0-1000">All Prices</option>
             <option value="0-300">Below ₹300</option>
@@ -119,7 +124,6 @@ function Shop() {
             <option value="600-1000">₹600 - ₹1000</option>
           </select>
         </div>
-
         <div className="col-md-2 mb-2">
           <select
             className="form-select"
@@ -133,13 +137,11 @@ function Shop() {
             <option value="1">1★ & above</option>
           </select>
         </div>
-
         <div className="col-md-1 mb-2">
           <button className="btn btn-success w-100" onClick={() => navigate("/cart")}>
             Cart
           </button>
         </div>
-
         <div className="col-md-2 mb-2">
           <button
             className="btn btn-outline-danger w-100"
@@ -152,7 +154,9 @@ function Shop() {
 
       {/* Plants Grid */}
       <div className="row">
-        {filteredPlants.length > 0 ? (
+        {filteredPlants.length === 0 ? (
+          <h5 className="text-center text-muted">No plants found...</h5>
+        ) : (
           filteredPlants.map((plant) => {
             const isInWishlist = wishlist.some((item) => item.id === plant.id);
             return (
@@ -170,7 +174,6 @@ function Shop() {
                   >
                     {isInWishlist ? <FaHeart size={22} /> : <FaRegHeart size={22} />}
                   </div>
-
                   <img
                     src={plant.image}
                     alt={plant.name}
@@ -196,8 +199,6 @@ function Shop() {
               </div>
             );
           })
-        ) : (
-          <h5 className="text-center text-muted">No plants found...</h5>
         )}
       </div>
     </div>

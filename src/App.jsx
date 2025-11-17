@@ -33,6 +33,9 @@ import AdminMessage from "./component/admin/AdminMessage";
 import AboutUs from "./component/user/AboutUs";
 import CareTips from "./component/user/CareTips";
 
+import PlaceOrder from "./component/user/PlaceOrder";
+import WishList from "./component/user/WishList";
+
 function Layout() {
   const location = useLocation();
 
@@ -64,6 +67,8 @@ function Layout() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/caretips" element={<CareTips />} />
+        <Route path="/wishlist" element={<WishList />} />
+        <Route path="/placeorder" element={<PlaceOrder />} />
 
 
         {/* Admin Routes */}

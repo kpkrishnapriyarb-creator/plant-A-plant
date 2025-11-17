@@ -210,108 +210,141 @@
   ],
   "orders": [
     {
-      "id": "2eb2",
-      "user": "krishnapriya",
-      "address": "Trivandrum,Kerala",
-      "phone": "8085673086",
+      "id": "f8b1",
+      "user": "krishna",
+      "address": "kochi,kerala",
+      "phone": "8907658934",
       "products": [
         {
-          "id": "14",
-          "name": "Lavender",
-          "price": 320,
-          "image": "https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGF2ZW5kZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600"
-        },
-        {
-          "id": "6",
-          "name": "Money Plant",
-          "price": 220,
-          "image": "https://houseplantalley.com/wp-content/uploads/2023/12/Pilea-Peperomioides-1024x1024.jpg"
+          "id": "23",
+          "name": "Philodendron",
+          "price": "300",
+          "image": "https://tse4.mm.bing.net/th/id/OIP.gT_fEZy-TiImFuulo13-JAHaE8?pid=Api&P=0&h=180"
         }
       ],
-      "total": 540,
-      "status": "delivered",
-      "date": "2025-11-08T06:32:51.904Z"
+      "total": 300,
+      "status": "pending",
+      "date": "2025-11-17T14:14:38.215Z"
     },
     {
-      "id": "aaec",
+      "id": "1704",
       "user": "Roopa",
-      "address": "Roopa's House,Kochi,Kerala",
-      "phone": "9087452545",
+      "address": "Eranakulam,kerala",
+      "phone": "8976543098",
       "products": [
         {
-          "id": "4",
-          "name": "zz plant",
-          "price": 300,
-          "image": "https://globalgardeningsecrets.com/wp-content/uploads/2022/08/1661442330_514_11-beautiful-varieties-of-ZZ-plants-with-photos.webp.webp"
+          "id": "10",
+          "name": "Bamboo Palm",
+          "price": 420,
+          "image": "https://cdn.pixabay.com/photo/2013/03/14/04/25/beach-hut-93414_1280.jpg"
+        }
+      ],
+      "total": 420,
+      "status": "pending",
+      "date": "2025-11-17T15:22:44.072Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "84b8",
+      "name": "krishna",
+      "email": "krishna@gmail.com",
+      "message": "Good and fresh plants"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "krishna",
+      "password": "111",
+      "wishlist": [
+        {
+          "id": "5",
+          "name": "Aloe Vera",
+          "category": "Medicinal",
+          "price": 200,
+          "rating": 4.8,
+          "image": "https://plus.unsplash.com/premium_photo-1673818150416-7b96596cfdf9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFsb2UlMjB2ZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+          "description": "Succulent plant known for its healing and skin-soothing properties."
         },
         {
           "id": "1",
           "name": "Peace Lily",
           "price": 250,
-          "image": "https://images.pexels.com/photos/1471600/pexels-photo-1471600.jpeg"
+          "category": "Indoor",
+          "rating": 4.2,
+          "image": "https://images.pexels.com/photos/1471600/pexels-photo-1471600.jpeg",
+          "description": "A beautiful indoor plant with white blooms that purifies air."
         }
       ],
-      "total": 550,
-      "status": "pending",
-      "date": "2025-11-08T06:38:30.412Z"
-    },
-    {
-      "id": "6385",
-      "user": "Sanjay",
-      "address": "Eranakulam,Kerala",
-      "phone": "9806753245",
-      "products": [
+      "cart": [
         {
-          "id": "5",
-          "name": "Aloe Vera",
-          "price": 200,
-          "image": "https://plus.unsplash.com/premium_photo-1673818150416-7b96596cfdf9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFsb2UlMjB2ZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600"
+          "id": "4",
+          "name": "zz plant",
+          "price": 300,
+          "category": "Outdoor",
+          "rating": 4.2,
+          "image": "https://globalgardeningsecrets.com/wp-content/uploads/2022/08/1661442330_514_11-beautiful-varieties-of-ZZ-plants-with-photos.webp.webp",
+          "description": "Popular air-purifying plant with long feathery leaves."
+        },
+        {
+          "id": "1",
+          "name": "Peace Lily",
+          "price": 250,
+          "category": "Indoor",
+          "rating": 4.2,
+          "image": "https://images.pexels.com/photos/1471600/pexels-photo-1471600.jpeg",
+          "description": "A beautiful indoor plant with white blooms that purifies air."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "username": "krishnapriya",
+      "password": "kri",
+      "wishlist": [],
+      "cart": []
+    },
+    {
+      "id": "3",
+      "username": "Ammu",
+      "password": "ammu",
+      "wishlist": [],
+      "cart": []
+    },
+    {
+      "id": "4",
+      "username": "Roopa",
+      "password": "roopa",
+      "wishlist": [
+        {
+          "id": "4",
+          "name": "zz plant",
+          "price": 300,
+          "category": "Outdoor",
+          "rating": 4.2,
+          "image": "https://globalgardeningsecrets.com/wp-content/uploads/2022/08/1661442330_514_11-beautiful-varieties-of-ZZ-plants-with-photos.webp.webp",
+          "description": "Popular air-purifying plant with long feathery leaves."
         }
       ],
-      "total": 200,
-      "status": "pending",
-      "date": "2025-11-08T06:41:26.801Z"
-    }
-  ],
-  "messages": [
-    {
-      "id": "f37e",
-      "name": "Krishnapriya",
-      "email": "krishnapriya@gmail.com",
-      "message": "Good customer service and good product"
+      "cart": [
+        {
+          "id": "10",
+          "name": "Bamboo Palm",
+          "category": "Indoor",
+          "price": 420,
+          "rating": 4.7,
+          "image": "https://cdn.pixabay.com/photo/2013/03/14/04/25/beach-hut-93414_1280.jpg",
+          "description": "Graceful palm perfect for homes and offices, filters toxins."
+        }
+      ]
     },
     {
-      "id": "ca0a",
-      "name": "Roopa",
-      "email": "roopa@gmail.com",
-      "message": "Good product"
-    }
-  ],
-  "users": [
-    {
-      "id": "8c06",
-      "username": "krishna",
-      "password": "111"
-    },
-    {
-      "id": "fe98",
-      "username": "krishnapriya",
-      "password": "kri"
-    },
-    {
-      "id": "6865",
-      "username": "Ammu",
-      "password": "ammu"
-    },
-    {
-      "id": "b176",
-      "username": "Roopa",
-      "password": "roopa"
-    },
-    {
-      "id": "5099",
+      "id": "5",
       "username": "Sanjay",
-      "password": "sanjay"
+      "password": "sanjay",
+      "wishlist": [],
+      "cart": []
     }
   ],
   "admin": [
@@ -328,134 +361,99 @@
       "role": "admin"
     }
   ],
-  "wishlist": [
+  "wishlist": [],
+  "cart": [],
+  "careTips": [
+    {
+      "id": "1",
+      "name": "Pothos",
+      "imgUrl": "https://images.pexels.com/photos/3076898/pexels-photo-3076898.jpeg",
+      "tips": "Bright indirect light; water when topsoil becomes dry."
+    },
+    {
+      "id": "2",
+      "name": "Snake Plant",
+      "imgUrl": "https://homeplantsguide.com/img/dracaena-masoniana-variegata.webp",
+      "tips": "Tolerates low light; water sparingly, avoid overwatering."
+    },
     {
       "id": "3",
-      "name": "Areca Palm",
-      "price": 350,
-      "category": "Outdoor",
-      "rating": 4.1,
-      "image": "https://m.media-amazon.com/images/I/61NUj7J6VrL._SY300_SX300_QL70_FMwebp_.jpg",
-      "description": "Popular air-purifying plant with long feathery leaves."
-    }
-  ],
-  "cart": [
+      "name": "ZZ Plant",
+      "imgUrl": "https://images.pexels.com/photos/4505175/pexels-photo-4505175.jpeg",
+      "tips": "Can survive in low light; water only when completely dry."
+    },
     {
-      "id": "3",
-      "name": "Areca Palm",
-      "price": 350,
-      "category": "Outdoor",
-      "rating": 4.1,
-      "image": "https://m.media-amazon.com/images/I/61NUj7J6VrL._SY300_SX300_QL70_FMwebp_.jpg",
-      "description": "Popular air-purifying plant with long feathery leaves."
+      "id": "4",
+      "name": "Peace Lily",
+      "imgUrl": "https://images.pexels.com/photos/1471600/pexels-photo-1471600.jpeg",
+      "tips": "Prefers medium light; keep soil slightly moist at all times."
     },
     {
       "id": "5",
+      "name": "Areca Palm",
+      "imgUrl": "https://m.media-amazon.com/images/I/61NUj7J6VrL._SY300_.jpg",
+      "tips": "Bright indirect light; water regularly but avoid soggy soil."
+    },
+    {
+      "id": "6",
       "name": "Aloe Vera",
-      "category": "Medicinal",
-      "price": 200,
-      "rating": 4.8,
-      "image": "https://plus.unsplash.com/premium_photo-1673818150416-7b96596cfdf9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFsb2UlMjB2ZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
-      "description": "Succulent plant known for its healing and skin-soothing properties."
-    }
-  ],
-
-  
-"careTips": [
-  {
-    "id": 1,
-    "name": "Pothos",
-    "imgUrl": "https://images.pexels.com/photos/3076898/pexels-photo-3076898.jpeg",
-    "tips": "Bright indirect light; water when topsoil becomes dry."
-  },
-  {
-    "id": 2,
-    "name": "Snake Plant",
-    "imgUrl": "https://homeplantsguide.com/img/dracaena-masoniana-variegata.webp",
-    "tips": "Tolerates low light; water sparingly, avoid overwatering."
-  },
-  {
-    "id": 3,
-    "name": "ZZ Plant",
-    "imgUrl": "https://images.pexels.com/photos/4505175/pexels-photo-4505175.jpeg",
-    "tips": "Can survive in low light; water only when completely dry."
-  },
-  {
-    "id": 4,
-    "name": "Peace Lily",
-    "imgUrl": "https://images.pexels.com/photos/1471600/pexels-photo-1471600.jpeg",
-    "tips": "Prefers medium light; keep soil slightly moist at all times."
-  },
-  {
-    "id": 5,
-    "name": "Areca Palm",
-    "imgUrl": "https://m.media-amazon.com/images/I/61NUj7J6VrL._SY300_.jpg",
-    "tips": "Bright indirect light; water regularly but avoid soggy soil."
-  },
-  {
-    "id": 6,
-    "name": "Aloe Vera",
-    "imgUrl": "https://plus.unsplash.com/premium_photo-1673818150416-7b96596cfdf9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFsb2UlMjB2ZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
-    "tips": "Needs bright sunlight; water once every 2–3 weeks."
-  },
-  {
-    "id": 7,
-    "name": "Money Plant",
-    "imgUrl": "https://houseplantalley.com/wp-content/uploads/2023/12/Pilea-Peperomioides-1024x1024.jpg",
-    "tips": "Grows well in water or soil; indirect light is ideal."
-  },
-  {
-    "id": 8,
-    "name": "Rubber Plant",
-    "imgUrl": "https://www.thespruce.com/thmb/mjZNaVSqShjcpPrp8bxtoXEL6W8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1291612778-fac43b63ed1a465eac4c4b4bc3e879de.jpg",
-    "tips": "Bright filtered light; keep soil moist but not wet."
-  },
-  {
-    "id": 9,
-    "name": "Spider Plant",
-    "imgUrl": "https://images.pexels.com/photos/4505177/pexels-photo-4505177.jpeg",
-    "tips": "Thrives in indirect sunlight; water moderately."
-  },
-  {
-    "id": 10,
-    "name": "Jade Plant",
-    "imgUrl": "https://images.pexels.com/photos/212942/pexels-photo-212942.jpeg",
-    "tips": "Needs bright light; water only when soil is fully dry."
-  },
-  {
-    "id": 11,
-    "name": "Fern Plant",
-    "imgUrl": "https://plantglossary.com/wp-content/uploads/2023/03/Types-of-ferns.jpg",
-    "tips": "High humidity; keep soil moist and avoid direct sunlight."
-  },
-  {
-    "id": 12,
-    "name": "Lavender",
-    "imgUrl": "https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGF2ZW5kZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
-    "tips": "Full sunlight; water only when soil gets dry."
-  },
-  {
-    "id": 13,
-    "name": "Rose Plant",
-    "imgUrl": "https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600",
+      "imgUrl": "https://plus.unsplash.com/premium_photo-1673818150416-7b96596cfdf9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFsb2UlMjB2ZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600",
+      "tips": "Needs bright sunlight; water once every 2–3 weeks."
+    },
+    {
+      "id": "7",
+      "name": "Money Plant",
+      "imgUrl": "https://houseplantalley.com/wp-content/uploads/2023/12/Pilea-Peperomioides-1024x1024.jpg",
+      "tips": "Grows well in water or soil; indirect light is ideal."
+    },
+    {
+      "id": "8",
+      "name": "Rubber Plant",
+      "imgUrl": "https://www.thespruce.com/thmb/mjZNaVSqShjcpPrp8bxtoXEL6W8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1291612778-fac43b63ed1a465eac4c4b4bc3e879de.jpg",
+      "tips": "Bright filtered light; keep soil moist but not wet."
+    },
+    {
+      "id": "9",
+      "name": "Spider Plant",
+      "imgUrl": "https://images.pexels.com/photos/4505177/pexels-photo-4505177.jpeg",
+      "tips": "Thrives in indirect sunlight; water moderately."
+    },
+    {
+      "id": "10",
+      "name": "Jade Plant",
+      "imgUrl": "https://images.pexels.com/photos/212942/pexels-photo-212942.jpeg",
+      "tips": "Needs bright light; water only when soil is fully dry."
+    },
+    {
+      "id": "11",
+      "name": "Fern Plant",
+      "imgUrl": "https://plantglossary.com/wp-content/uploads/2023/03/Types-of-ferns.jpg",
+      "tips": "High humidity; keep soil moist and avoid direct sunlight."
+    },
+    {
+      "id": "12",
+      "name": "Lavender",
+      "imgUrl": "https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGF2ZW5kZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600",
+      "tips": "Full sunlight; water only when soil gets dry."
+    },
+    {
+      "id": "13",
+      "name": "Rose Plant",
+      "imgUrl": "https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600",
       "description": "Classic flowering plant that adds fragrance and color to gardens.",
-    "tips": "Needs strong sunlight; prune regularly and water deeply."
-  },
-  {
-    "id": 14,
-    "name": "Philodendron",
-    "imgUrl": "https://images.pexels.com/photos/4505174/pexels-photo-4505174.jpeg",
-    "tips": "Prefers medium light; keep soil lightly moist."
-  },
-  {
-    "id": 15,
-    "name": "Lucky Bamboo",
-    "imgUrl": "https://images.pexels.com/photos/4505169/pexels-photo-4505169.jpeg",
-    "tips": "Grows best in water; keep roots submerged and change water weekly."
-  }
-]
-
-
-
+      "tips": "Needs strong sunlight; prune regularly and water deeply."
+    },
+    {
+      "id": "14",
+      "name": "Philodendron",
+      "imgUrl": "https://images.pexels.com/photos/4505174/pexels-photo-4505174.jpeg",
+      "tips": "Prefers medium light; keep soil lightly moist."
+    },
+    {
+      "id": "15",
+      "name": "Lucky Bamboo",
+      "imgUrl": "https://images.pexels.com/photos/4505169/pexels-photo-4505169.jpeg",
+      "tips": "Grows best in water; keep roots submerged and change water weekly."
+    }
+  ]
 }
-
