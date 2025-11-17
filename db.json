@@ -345,6 +345,13 @@
       "password": "sanjay",
       "wishlist": [],
       "cart": []
+    },
+    {
+      "id": "dafd",
+      "username": "Anu",
+      "password": "anu",
+      "wishlist": [],
+      "cart": []
     }
   ],
   "admin": [
