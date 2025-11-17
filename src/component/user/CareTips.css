@@ -1,0 +1,166 @@
+/* --- Global & Container Styles --- */
+.plant-care-search-page {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #1a472a; /* Dark Forest Green */
+}
+
+/* --- Hero & Search Section (The Nav Area) --- */
+.search-hero {
+    background-color: #e6f1e8; /* Light mint green */
+    text-align: center;
+    padding: 60px 20px 40px;
+    margin-bottom: 40px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: 2px solid #4a755d; /* Medium Green border */
+    border-radius: 50px;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #1a472a; /* Darker green on focus */
+}
+
+/* --- Plant Grid --- */
+.plant-grid-section {
+    padding-bottom: 60px;
+}
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.plant-card {
+    /* The Div Box style */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.plant-image-container {
+    height: 200px; /* Fixed height for consistent cards */
+    overflow: hidden;
+}
+
+.plant-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plant-name {
+    color: #4a755d;
+    font-size: 1.3em;
+    margin: 15px 10px 10px;
+}
+
+.care-tip-button {
+    background-color: #6aa84f; /* Accent Green */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
+
+.care-tip-button:hover {
+    background-color: #4a755d;
+}
+
+/* --- Modal Styling --- */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-tips {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0fff4; /* Lightest green for the tips box */
+    border-left: 4px solid #6aa84f;
+    border-radius: 4px;
+}
+
+/* --- Utility/Status Messages --- */
+.loading-message, .no-results, .error-message {
+    text-align: center;
+    grid-column: 1 / -1; 
+    padding: 40px;
+    font-size: 1.2em;
+    color: #4a755d;
+}
+.error-message {
+    color: #d9534f; /* Red for error messages */
+    font-weight: 600;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 600px) {
+    .plant-grid {
+        grid-template-columns: 1fr;
+}
+}

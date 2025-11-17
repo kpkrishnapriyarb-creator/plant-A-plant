@@ -1,0 +1,141 @@
+/* Color Palette: 
+   White: #FFFFFF
+   Primary Green: #4CAF50 (a nice, vibrant green)
+   Accent Green: #8BC34A (a softer, lighter green)
+   Text: #333333 
+*/
+
+.about-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333333;
+  background-color: #e8f5e9; /* White background */
+}
+
+.about-us-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-us-header h1 {
+  color: #276749;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.about-us-header p {
+  color: #276749;
+  font-size: 1.2em;
+}
+
+/* Mission Section */
+.mission-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.mission-section .mission-content {
+  flex: 1;
+}
+
+.mission-section h2 {
+  color: #276749;
+  border-bottom: 3px solid #8BC34A;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.mission-section .highlight {
+  font-style: italic;
+  font-size: 1.1em;
+  padding-top: 15px;
+  color: #276749;
+}
+
+/* Values Section */
+.values-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.values-section h2 {
+  color: #276749;
+  margin-bottom: 30px;
+}
+
+.values-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.value-card {
+  flex: 1;
+  padding: 20px;
+  background-color: #f7fff7; /* Very light green/off-white for contrast */
+  border: 1px solid #e0ffe0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.value-card h3 {
+  color: #276749;
+  margin-bottom: 10px;
+}
+
+/* Team Section */
+.founder-bio {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #f7fff7;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.founder-bio .founder-image {
+  /* Placeholder for an actual image/avatar */
+  min-width: 150px; 
+  height: 150px;
+  background-color: #276749;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Footer */
+.about-us-footer {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px dashed #8BC34A;
+}
+
+.about-us-footer a {
+  color: #276749;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-us-footer a:hover {
+  color: #276749; /* Darker green on hover */
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #8BC34A, rgba(0, 0, 0, 0));
+  margin: 40px 0;
+}
